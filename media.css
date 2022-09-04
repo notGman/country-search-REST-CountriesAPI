@@ -1,0 +1,8 @@
+@media only screen and (max-width:748px){
+  .container{
+    width: 90%;
+  }
+  .search{
+    width: 90%;
+  }
+}
