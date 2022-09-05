@@ -5,7 +5,7 @@ const cont = document.querySelector(".container");
 
 
 searchBtn.addEventListener("click", () => {
-  let country = searchBar.value;
+  let country = searchBar.value.split(" ").join("");
   let url = `https://restcountries.com/v3.1/name/${country}?fullText=true`;
   console.log(url);
   fetch(url)
@@ -27,7 +27,7 @@ searchBtn.addEventListener("click", () => {
           <h3 class="wrap-capital con">Capital: <span class="">${data[0].capital[0]}</span></h3>
           <h3 class="wrap-continent con">Continent: <span class="">${data[0].continents[0]}</span></h3>
           <h3 class="wrap-pop con">Population: <span class="">${data[0].population}</span></h3>
-          <h3 class="wrap-curr con">Curremcy: <span class="">${data[0].currencies[Object.keys(data[0].currencies)].name} - ${Object.keys(data[0].currencies)[0]}</span></h3>
+          <h3 class="wrap-curr con">Currency: <span class="">${data[0].currencies[Object.keys(data[0].currencies)].name} - ${Object.keys(data[0].currencies)[0]}</span></h3>
           <h3 class="wrap-lang con">Common Languages: <span class="">${Object.values(data[0].languages).toString().split(",").join(", ")}</span></h3>
 
         </div>
