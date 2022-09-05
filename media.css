@@ -3,6 +3,25 @@
     width: 90%;
   }
   .search{
-    width: 90%;
+    width: 75%;
+  }
+  .body{
+    background-image: url('https://picsum.photos/1366/768');
+  }
+  .search-bar,.search-btn{
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width:390px){
+  .container{
+    padding: 10px;
+  }
+  .search-btn,.search-bar{
+    padding: 7px 15px;
+  }
+  .search{
+    display: flex;
+    justify-content: center;
+
   }
 }

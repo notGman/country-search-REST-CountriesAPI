@@ -9,9 +9,9 @@
 }
 body{
   /* background-color: #111; */
-  background-image: url(./pexels-roberto-nickson-2885320.jpg);
+  background-image: url('https://picsum.photos/1366/768');
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
 }
 .wrapper{
   display: flex;
