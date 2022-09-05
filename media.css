@@ -15,13 +15,14 @@
 @media only screen and (max-width:390px){
   .container{
     padding: 10px;
+    overflow: hidden;
   }
   .search-btn,.search-bar{
     padding: 7px 15px;
+    width: 50%;
   }
   .search{
     display: flex;
     justify-content: center;
-
   }
 }
